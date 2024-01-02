@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  double t;
+  cout << "Enter a F degrees temperature: ";
+  cin >> t;
+  if (t >= 30) { // for comfortable and warm
+    if (t > 100) { //darn hot
+      cout << "This is darn hot!";
+    } if ((30.00 <= t) && (t <= 100)) { // comfortable
+      cout << "I can live with that.";
+    } 
+  } else { // cold
+      cout << "Cold!";
+    } if (t <= -20.00) { // prints cold and too cold
+      cout << "\nToo cold even for Stoli!";
+  }
+}
